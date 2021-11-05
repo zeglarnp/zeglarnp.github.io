@@ -1,0 +1,99 @@
+body {
+    margin:0px;
+    background-image:radial-gradient(#555 1px, #222 1px);
+    background-size:25px 25px;
+    font-family:"Castoro";
+    color:white;
+}
+.screen{
+    width:100%;
+    min-height:100vh;
+    min-height:-moz-fill-available;          /* WebKit-based browsers will ignore this. */
+    min-height:-webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    min-height:fill-available;
+    background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px), url("background.jpg");
+    background-size:25px 25px, cover;
+    display:flex;
+    align-items:center;
+}
+.nav{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+.nav-item{
+    margin: 15px;
+    display:flex;
+    flex-direction:row-reverse;
+    align-self: flex-end;
+    align-items: center;
+}
+.nav-item-link{
+    padding:15px;
+}
+.nav-item-desc{
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 200ms, opacity 200ms;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right:10px;
+}
+.nav-item-link:hover + .nav-item-desc{
+    visibility:visible;
+    opacity:1;
+}
+.nav-item-desc-triangle{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid white;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    margin-right:0px;
+}
+.nav-item-desc-text{
+    background-color: white;
+    border-radius:8px;
+    padding:7px 14px 8px 14px;
+    color:black;
+    font-family:"Open Sans";
+    font-size: 14px;
+}
+.content{
+    width:70%;
+    padding:0px 15%;
+}
+.title{
+    font-family:"Texturina";
+    padding:30px 0px 0px 0px;   
+    font-size:70px;
+
+}
+.subtitle{
+    font-size:22px;
+    font-family:"Castoro";
+    margin-bottom:50px;
+    max-width:700px;
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .background{
+        background-size:50px 50px, cover;
+    }
+    .content{
+        width: calc(100% - 150px);
+        padding:0px 75px;
+    }
+    .title{
+        font-size:90px;
+    }
+    .subtitle{
+        font-size:35px;
+        max-width:1000px;
+    }
+
+}
