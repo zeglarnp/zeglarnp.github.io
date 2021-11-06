@@ -6,6 +6,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
+    
+    <style>
+                div.gallery {
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  float: left;
+                  width: 180px;
+                }
+
+                div.gallery:hover {
+                  border: 1px solid #777;
+                }
+
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+    </style>
+    
     <body>
         <div class="screen">
           <div class="nav">
@@ -22,11 +46,14 @@
                 </div>                
             </div>
             <div class="content">
-                <div class="title">Some of my works</div>
-                <embed src="formulas.pdf" width="500" height="375" 
-                    type="application/pdf">
+                <div class="title">Some work</div>
                 
-                <img src="ex.pdf" alt="" width="600" height="400">
+                <div class="gallery">
+                  <a target="_blank" href="sr_snabba_forlopp.pdf">
+                    <img src="img_snabba.jpg" alt="" width="600" height="400">
+                  </a>
+                </div>
+                
             </div>
         </div>
     </body>
