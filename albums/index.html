@@ -6,6 +6,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lato&family=Texturina:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
+    
+    <style>
+                div.gallery {
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  float: left;
+                  width: 180px;
+                }
+
+                div.gallery:hover {
+                  border: 1px solid #777;
+                }
+
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+    </style>
+    
     <body>
         <div class="screen">
           <div class="nav">
@@ -22,22 +46,34 @@
                 </div>                
             </div>
             <div class="content">
-                <div class="title">Nils albums</div>
-                <div class="subtitle">
-                Here follows some albums.
+
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="img1.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
                 </div>
-                <div class="gallery" align="center">
-                <div class="thumbnails">
-                    <img onmouseover="preview.src=img1.src" name="img1" src="images/img1.jpg" alt="" />
-                    <img onmouseover="preview.src=img2.src" name="img2" src="images/img2.jpg" alt="" />
-                    <img onmouseover="preview.src=img3.src" name="img3" src="images/img3.jpg" alt="" />
-                    <img onmouseover="preview.src=img4.src" name="img4" src="images/img4.jpg" alt="" />
-                    <img onmouseover="preview.src=img5.src" name="img5" src="images/img5.jpg" alt="" />
+
+                <div class="gallery">
+                  <a target="_blank" href="img_forest.jpg">
+                    <img src="img2.jpg" alt="Forest" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
                 </div>
-                <div class="preview" align="center">
-                    <img name="preview" src="images/img1.jpg" alt=""/>
+
+                <div class="gallery">
+                  <a target="_blank" href="img_lights.jpg">
+                    <img src="img3.jpg" alt="Northern Lights" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
                 </div>
-                </div> <!-- Close the gallery div -->
+
+                <div class="gallery">
+                  <a target="_blank" href="img_mountains.jpg">
+                    <img src="img4.jpg" alt="Mountains" width="600" height="400">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
                 
             </div>
         </div>
