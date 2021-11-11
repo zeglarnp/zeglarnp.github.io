@@ -31,7 +31,7 @@ def convert(filename):
     from pdf2image import convert_from_path
     # Store Pdf with convert_from_path function
     images = convert_from_path('non_converted/' + filename,poppler_path = 'C:/Users/zegla/Documents/Python/poppler-21.10.0/Library/bin')
-    images[1].save(filename.split('.pdf')[0] + '.jpg', 'JPEG')
+    images[0].save(filename.split('.pdf')[0] + '.jpg', 'JPEG')
 
 filenames = os.listdir("non_converted")
 
