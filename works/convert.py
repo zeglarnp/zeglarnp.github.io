@@ -14,7 +14,7 @@ def app_gallery(filename):
     #gallery.string=""" class="gallery" """
     link = soup.new_tag("a",href=filename,target="_blank")
     #link.string=""" href= " """ +filename+ """ " target="_blank" """
-    img = soup.new_tag("img",alt="", height="400", src=filename, width="600")
+    img = soup.new_tag("img",alt="", height="400", src=filename.split('.pdf')[0] + ".jpg", width="600")
     #img.string=""" alt="" height="400" src=" """+filename+""" " width="600" """
     
     link.append(img)
