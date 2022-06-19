@@ -1,0 +1,244 @@
+/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
+/* Content general for my site */
+
+body {
+    margin:0px;
+    background-image:radial-gradient(#555 1px, #222 1px);
+    background-size:25px 25px;
+    font-family:"Castoro";
+    color: #bbbbbb;
+}
+.screen{
+    width:100%;
+    min-height:100vh;
+    min-height:-moz-fill-available;          /* WebKit-based browsers will ignore this. */
+    min-height:-webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    min-height:fill-available;
+    background-image:radial-gradient(#555 1px, rgba(0, 0, 0, 0) 1px), url("../background.jpg");
+    background-size:25px 25px, cover;
+    display:flex;
+    align-items:center;
+}
+.nav{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+.nav-item{
+    margin: 15px;
+    display:flex;
+    flex-direction:row-reverse;
+    align-self: flex-end;
+    align-items: center;
+}
+.nav-item-link{
+    padding:15px;
+}
+.nav-item-desc{
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 200ms, opacity 200ms;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right:10px;
+}
+.nav-item-link:hover + .nav-item-desc{
+    visibility:visible;
+    opacity:1;
+}
+.nav-item-desc-triangle{
+    width: 0;
+    height: 0;
+    border-left: 7px solid white;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    margin-right:0px;
+}
+.nav-item-desc-text{
+    background-color: white;
+    border-radius:8px;
+    padding:7px 14px 8px 14px;
+    color:black;
+    font-family:"Open Sans";
+    font-size: 14px;
+}
+.content{
+    width:90%;
+    padding:5% 5%;
+}
+
+.circular_image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  /* commented for demo
+  float: left;
+  margin-left: 125px;
+  margin-top: 20px;
+  */
+
+  /*for demo*/
+  display:inline-block;
+  vertical-align:middle;
+}
+.circular_image img{
+  width:100%;
+}
+
+/* css from template */
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color:  	#bbbbbb;  }
+.msg a { margin-left: 20px; background: #408814; color: #dddddd; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #dddddd; }
+
+/* //-- yui-grids style overrides -- */
+
+#inner {
+padding: 10px 50px;
+margin: 50px auto;
+background-image: radial-gradient( #251c00 0%, #000000 100%);
+border: solid #666;
+border-width: 8px 0 2px 0; }
+.yui-gf {
+margin-bottom: 2em;
+padding-bottom: 2em;
+border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd {
+margin: 2.5em 0 3em 0;
+padding-bottom: 1.5em;
+border-bottom: 1px solid #ccc;
+}
+#hd h2 {
+text-transform: uppercase;
+letter-spacing: 2px;
+font-family:"Texturina";}
+#bd, #ft {
+margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft {
+padding: 1em 0 5em 0;
+font-size: 92%;
+border-top: 1px solid #ccc;
+text-align: center; }
+#ft p {
+margin-bottom: 0;
+text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 {
+font-size: 48px;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-family:"Texturina";}
+h2 {
+font-size: 152% }
+h3, h4 {
+font-size: 122%; }
+h1, h2, h3, h4 {
+color: #dddddd; }
+p {
+font-size: 100%;
+line-height: 18px;
+padding-right: 3em; }
+a {
+color: #ff878f }
+a:hover {
+text-decoration: none; }
+strong {
+font-weight: bold; }
+li {
+line-height: 24px;
+border-bottom: 1px solid #ccc; }
+p.enlarge {
+font-size: 144%;
+padding-right: 6.5em;
+line-height: 24px; }
+p.enlarge span {
+color: #dddddd }
+.contact-info {
+margin-top: 7px; }
+.first h2 {
+font-style: italic; }
+.last {
+border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf {
+display: block;
+float: left;
+background: #666;
+color: white;
+padding: 6px 50px 6px 12px;
+margin-bottom: 6px;
+text-decoration: none;  }
+a#pdf:hover {
+background: #222; }
+
+.job {
+position: relative;
+margin-bottom: 1em;
+padding-bottom: 1em;
+border-bottom: 1px solid #ccc; }
+.job h4 {
+position: absolute;
+top: 0.35em; right: 0 }
+.job p {
+margin: 0.75em 0 0.75em 0; }
+
+.last {
+border: none; }
+.skills-list {  }
+.skills-list ul {
+margin: 0; }
+.skills-list li {
+margin: 3px 0;
+padding: 3px 0; }
+.skills-list li span {
+font-size: 152%;
+display: block;
+margin-bottom: -2px;
+padding: 0 }
+.talent {
+width: 32%;
+float: left }
+.talent h2 {
+margin-bottom: 6px; }
+
+#srt-ttab {
+margin-bottom: 100px;
+text-align: center;  }
+#srt-ttab img.last {
+margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{
+width:80.2%;}
+.yui-gf div.first{
+width:12.3%;}
+
+
+
+
